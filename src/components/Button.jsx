@@ -1,4 +1,4 @@
-const Button = ({ children, onClick, className = "", disabled = false, variant = "primary" }) => {
+const button = ({ children, onClick, className = "", disabled = false, variant = "primary" }) => {
     const baseStyles = "px-4 py-2 rounded font-semibold transition-colors";
     const variantStyles = {
       primary: "bg-blue-500 text-white hover:bg-blue-600",
@@ -17,4 +17,4 @@ const Button = ({ children, onClick, className = "", disabled = false, variant =
     );
   };
   
-  export default Button;
+  export default button;
