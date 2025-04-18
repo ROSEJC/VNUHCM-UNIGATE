@@ -5,9 +5,10 @@ import './App.css'
 import { Routes, Route } from 'react-router-dom';
 import Login from './Login.jsx'
 import Forum from './Forum.jsx'
-
+import ForumHeader from './ForumHeader.jsx'
+import ForumTopicCard from './Card.jsx'
+import CreatePostForm from './CreatePost.jsx'
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <Routes>
