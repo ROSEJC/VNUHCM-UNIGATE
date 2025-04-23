@@ -88,7 +88,7 @@ export function PostCard({ title, content, description, id, postCount }) {
 }
 
 
-export function PostContentCard({title, content, topic, date}) {
+export function PostContentCard({title, content, topic, date, onClickFunc}) {
   return (
     <div className="bg-white border rounded-lg p-5 shadow-sm max-w-3xl mx-auto">
       
@@ -121,12 +121,39 @@ export function PostContentCard({title, content, topic, date}) {
         <button className="flex items-center gap-1 hover:text-black">
           ❤️ <span>25</span>
         </button>
-        <button className="flex items-center gap-1 hover:text-black">
+        <button className="flex items-center gap-1 hover:text-black" onClick={onClickFunc}>
           💬 <span>Trả lời</span>
         </button>
         <button className="flex items-center gap-1 hover:text-black">
           📤 <span>Chia sẻ</span>
         </button>
+      </div>
+    </div>
+  );
+}
+
+
+export function CommentCard({ author, time, content, likes }) {
+  return (
+    <div className="border border-gray-200 rounded-lg p-5 mb-4 bg-white max-w-3xl mx-auto">
+      {/* Avatar + Tên + Thời gian */}
+      <div className="flex items-center mb-2">
+        <div className="w-8 h-8 rounded-full bg-gray-300 mr-3 flex items-center justify-center text-xs text-gray-600">
+
+        </div>
+        <div>
+          <p className="font-semibold text-black">{author || "Bombadilo crocodilo"}</p>
+          <p className="text-xs text-gray-500">{time || " "}</p>
+        </div>
+      </div>
+
+      {/* Nội dung bình luận */}
+      <p className="text-gray-700 mb-3 !text-left">{content}</p>
+
+      {/* Like icon + số lượng */}
+      <div className="flex items-center text-sm text-gray-600 gap-1">
+        <span className="text-xl">♡</span> {/* Icon trái tim */}
+        <span>{likes || 25}</span>
       </div>
     </div>
   );
