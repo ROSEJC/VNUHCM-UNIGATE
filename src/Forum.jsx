@@ -11,7 +11,7 @@ export default function Forum() {
 
   const fetchTopics = async () => {
     try {
-      const response = await fetch("http://localhost:8000/api/get-post-topics");
+      const response = await fetch("http://127.0.0.1:8000/api/get-post-topics");
       if (!response.ok) {
         throw new Error("Có lỗi xảy ra khi lấy dữ liệu");
       }

@@ -1,7 +1,8 @@
 import { Search } from "lucide-react";
-
+import { Navigate } from "react-router-dom";
 export default function ForumHeader() {
   return (
+    
     <div className="flex items-center justify-between w-full p-4">
       {/* Tiêu đề bên trái */}
       <h2 className="!text-3xl font-bold text-black">Diễn đàn trao đổi</h2>
@@ -19,7 +20,11 @@ export default function ForumHeader() {
         </div>
 
         {/* Nút tạo bài viết */}
-        <button className="!bg-blue-700 hover:!bg-blue-800 text-white text-sm px-4 py-2 rounded-lg">
+
+
+        <button className="!bg-blue-700 hover:!bg-blue-800 text-white text-sm px-4 py-2 rounded-lg" 
+         onClick = {() => window.location.href = '/create_post'}
+        >
           Tạo bài viết mới
         </button>
       </div>
