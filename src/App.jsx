@@ -9,6 +9,7 @@ import CreatePostForm from './CreatePost.jsx';
 import PostDetailPage from './Post.jsx';
 import PostPage from './postPage.jsx';
 import PostDetail  from './QuestionDetails.jsx';
+import ReplyBox from './Reply.jsx';
 function App() {
 
   return (
@@ -16,6 +17,7 @@ function App() {
 
       <Route path="/login" element={<Login />} />
       <Route path="/forum" element={<Forum />} />
+      <Route path="/test" element={<ReplyBox />} />
       <Route path="/create_post" element={<CreatePostForm />} />
       <Route path="/posts_page/:title" element={<PostPage/>} />
       <Route path="/post/:id" element={<PostDetail/>} />
