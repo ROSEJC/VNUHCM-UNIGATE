@@ -59,7 +59,7 @@ export default function Forum() {
 
   <div className="max-w-screen-2xl mx-auto flex flex-col md:flex-row gap-8 px-6 py-8">
   {/* Cột bên trái */}
-  <div className="w-full md:w-3/4 bg-white-100 h-[400px] rounded-lg">
+  <div className="w-full md:w-3/4 bg-blue-100 rounded-lg">
       <ForumHeader 
        className ="!m-20"
       />
