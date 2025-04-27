@@ -53,7 +53,7 @@ export default function PostPage() {
 
      <div className="max-w-screen-2xl mx-auto flex flex-col md:flex-row gap-8 px-6 py-8">
       {/* Cột bên trái */}
-      <div className="w-full md:w-3/4 bg-white-100 h-[400px] rounded-lg">
+      <div className="w-full md:w-3/4 bg-white-100 rounded-lg">
       <h1 className="!text-3xl font-bold text-blue-700 !flex justify-left" >Thông báo</h1>
       <p className= "text-sm text-gray-500 mb-6 !flex justify-left">
         Các thông báo chính thức từ VNUHCM
@@ -72,7 +72,7 @@ export default function PostPage() {
       </div>
 
       {/* Cột bên phải */}
-      <div className="mt-15 flex-1 bg-white h-[400px] rounded-lg shadow">
+      <div className="mt-15 flex-1 bg-white rounded-lg shadow">
         <LatestPostPanel posts= {lastestPosts}/>
       </div>
     </div>
